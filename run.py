@@ -12,4 +12,17 @@ def tperror(prompt):
     errors = 0
 
     for i in range(len(in)):
-        if i in (0, len(inwords)-0)
+        if i in (0, len(inwords)-1):
+            if i in inwords[i] == words[i]:
+                continue
+            else:
+                errors = errors + 1
+        else :
+            if inwords[i] == words[i]:
+                if(inwords[i+1] == words[i+1]) & (inwords[i-1] == words[i-1]):
+                    continue
+                else:
+                    errors += 1
+            else:
+                errors += 1
+    return errors
